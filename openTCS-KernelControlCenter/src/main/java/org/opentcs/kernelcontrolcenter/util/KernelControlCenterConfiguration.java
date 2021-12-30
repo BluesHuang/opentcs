@@ -14,7 +14,7 @@ import org.opentcs.util.gui.dialog.ConnectionParamSet;
 
 /**
  * Provides methods to configure the KernelControlCenter application.
- *
+ * 内核控制中心应用程序的配置器，提供一些配置方法
  * @author Martin Grzenia (Fraunhofer IML)
  */
 @ConfigurationPrefix(KernelControlCenterConfiguration.PREFIX)

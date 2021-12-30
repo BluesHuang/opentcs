@@ -47,7 +47,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A GUI frontend for basic control over the kernel.
- *
+ * 一个用于对内核进行基本控制的前端交互页面
  * @author Stefan Walter (Fraunhofer IML)
  * @author Martin Grzenia (Fraunhofer IML)
  */
@@ -62,18 +62,22 @@ public class KernelControlCenter
   private static final Logger LOG = LoggerFactory.getLogger(KernelControlCenter.class);
   /**
    * This class's resource bundle.
+   * 配置资源绑定，=>国际化
    */
   private static final ResourceBundle BUNDLE = ResourceBundle.getBundle(BUNDLE_PATH);
   /**
    * The factory providing a ControlCenterInfoHandler
+   * 内核控制中心信息处理器工厂
    */
   private final ControlCenterInfoHandlerFactory controlCenterInfoHandlerFactoy;
   /**
    * Providers for panels shown in modelling mode.
+   * 建模模式下显示面板的提供者
    */
   private final Collection<Provider<ControlCenterPanel>> panelProvidersModelling;
   /**
    * Providers for panels shown in operating mode.
+   * 操作模式下显示面板的提供者
    */
   private final Collection<Provider<ControlCenterPanel>> panelProvidersOperating;
   /**
@@ -82,6 +86,7 @@ public class KernelControlCenter
   private final AboutDialog aboutDialog;
   /**
    * Panels currently active/shown.
+   * 活动面板
    */
   private final Set<ControlCenterPanel> activePanels = Collections.synchronizedSet(new HashSet<>());
   /**
@@ -102,6 +107,7 @@ public class KernelControlCenter
   private final PortalManager portalManager;
   /**
    * The call wrapper to use for service calls.
+   * 用于服务调用的调用包装器
    */
   private final CallWrapper callWrapper;
   /**

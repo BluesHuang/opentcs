@@ -98,7 +98,7 @@ public abstract class KernelInjectionModule
 
   /**
    * Returns a multibinder that can be used to register vehicle communication adapter factories.
-   *
+   * 注册小车驱动工厂类的multibinder
    * @return The multibinder.
    */
   protected Multibinder<VehicleCommAdapterFactory> vehicleCommAdaptersBinder() {

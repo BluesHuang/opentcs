@@ -15,7 +15,7 @@ import org.opentcs.drivers.vehicle.VehicleCommAdapterFactory;
 
 /**
  * A factory for loopback communication adapters (virtual vehicles).
- *
+ * 本地虚拟小车驱动工厂
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class LoopbackCommunicationAdapterFactory
@@ -23,6 +23,7 @@ public class LoopbackCommunicationAdapterFactory
 
   /**
    * The adapter components factory.
+   * 驱动构件工厂
    */
   private final LoopbackAdapterComponentsFactory adapterFactory;
   /**

@@ -63,6 +63,7 @@ public class StandardPlantModelService
   private final Model model;
   /**
    * The persister loading and storing model data.
+   * 模型数据的持久化工具，默认是XML格式
    */
   private final ModelPersister modelPersister;
   /**

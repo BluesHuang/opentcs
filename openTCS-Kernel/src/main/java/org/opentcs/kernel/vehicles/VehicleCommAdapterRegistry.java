@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A registry for all communication adapters in the system.
- *
+ * 所有小车驱动的注册器
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class VehicleCommAdapterRegistry

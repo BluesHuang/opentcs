@@ -43,7 +43,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Displays information about a vehicle (VehicleModel) graphically.
- *
+ * 小车详情面板
  * @author Iryna Felko (Fraunhofer IML)
  * @author Stefan Walter (Fraunhofer IML)
  * @author Martin Grzenia (Fraunhofer IML)
@@ -205,7 +205,7 @@ public class DetailPanel
   void attachToVehicle(LocalVehicleEntry newVehicleEntry) {
     requireNonNull(newVehicleEntry, "newVehicleEntry");
 
-    // Clean up first - but only if we're not reattaching the vehicle model which is already 
+    // Clean up first - but only if we're not reattaching the vehicle model which is already
     // attached to this panel.
     if (vehicleEntry != newVehicleEntry) {
       detachFromVehicle();

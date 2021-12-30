@@ -18,7 +18,7 @@ import org.opentcs.kernelcontrolcenter.vehicles.DriverGUI;
 
 /**
  * Configures the default extensions of the openTCS kernel control center application.
- *
+ * 配置内核控制中心的默认扩展
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public class DefaultKernelControlCenterExtensionsModule

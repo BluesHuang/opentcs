@@ -29,7 +29,8 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Controls a task that periodically fetches for kernel events.
- *
+ * 任务控制器，控制定期获取内核事件的任务
+ * 抓取内核事件
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public class KernelEventFetcher

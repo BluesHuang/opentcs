@@ -74,6 +74,7 @@ public class StandardVehicleService
   private final AttachmentManager attachmentManager;
   /**
    * The registry for all communication adapters.
+   * 小车驱动注册器
    */
   private final VehicleCommAdapterRegistry commAdapterRegistry;
   /**

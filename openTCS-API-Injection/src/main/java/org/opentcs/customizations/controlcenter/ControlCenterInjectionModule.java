@@ -16,7 +16,7 @@ import org.opentcs.drivers.vehicle.management.VehicleCommAdapterPanelFactory;
 /**
  * A base class for Guice modules adding or customizing bindings for the kernel control center
  * application.
- *
+ * 为内核控制中心添加或自定义绑定的Guice模块基类
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public abstract class ControlCenterInjectionModule
@@ -25,7 +25,7 @@ public abstract class ControlCenterInjectionModule
   /**
    * Returns a multibinder that can be used to register {@link ControlCenterPanel} implementations
    * for the kernel's modelling mode.
-   *
+   * 注册控制中心面板，在内核建模模态下
    * @return The multibinder.
    */
   protected Multibinder<ControlCenterPanel> controlCenterPanelBinderModelling() {
@@ -37,7 +37,7 @@ public abstract class ControlCenterInjectionModule
   /**
    * Returns a multibinder that can be used to register {@link ControlCenterPanel} implementations
    * for the kernel's operating mode.
-   *
+   * 注册控制中心面板，在内核操作模态下
    * @return The multibinder.
    */
   protected Multibinder<ControlCenterPanel> controlCenterPanelBinderOperating() {
@@ -49,7 +49,7 @@ public abstract class ControlCenterInjectionModule
   /**
    * Returns a multibinder that can be used to register {@link VehicleCommAdapterPanelFactory}
    * implementations.
-   *
+   * 注册小车通信适配器面板工厂
    * @return The multibinder.
    */
   protected Multibinder<VehicleCommAdapterPanelFactory> commAdapterPanelFactoryBinder() {
@@ -59,7 +59,7 @@ public abstract class ControlCenterInjectionModule
   /**
    * Returns a multibinder that can be used to register {@link PeripheralCommAdapterPanelFactory}
    * implementations.
-   *
+   * 注册小车次要参数的通信适配器面板工厂
    * @return The multibinder.
    */
   protected Multibinder<PeripheralCommAdapterPanelFactory> peripheralCommAdapterPanelFactoryBinder() {

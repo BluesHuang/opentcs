@@ -111,6 +111,7 @@ task release {
 task apiBase(type: Javadoc, description: 'Creates Javadoc for base API.') {
   title = "openTCS ${project.version} Base API documentation"
   destinationDir = baseApiDir
+  options.encoding = "UTF-8"
 
   source = project(':openTCS-API-Base').sourceSets.main.allJava
   classpath = project(':openTCS-API-Base').sourceSets.main.compileClasspath
@@ -130,6 +131,7 @@ task apiBase(type: Javadoc, description: 'Creates Javadoc for base API.') {
 task apiInjection(type: Javadoc, description: 'Creates Javadoc for injection API.') {
   title = "openTCS ${project.version} Injection API documentation"
   destinationDir = injectionApiDir
+  options.encoding = "UTF-8"
 
   source = project(':openTCS-API-Injection').sourceSets.main.allJava
   classpath = project(':openTCS-API-Injection').sourceSets.main.compileClasspath
@@ -152,7 +154,7 @@ task asciidoctorReleaseNotes(type: org.asciidoctor.gradle.jvm.AsciidoctorTask) {
   // Document type: article (default), book, inline, manpage)
   options doctype: 'article'
   // Where to look for AsciiDoc files. Default: src/docs/asciidoc
-  sourceDir = file("src/docs/release-notes")  
+  sourceDir = file("src/docs/release-notes")
   baseDirFollowsSourceDir()
   // Where to put the rendered documents. Default: $buildDir/asciidoc.
   outputDir = releaseNotesDir

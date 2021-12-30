@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Configures/binds the loopback communication adapters of the openTCS kernel.
- *
+ * 向内核配置一个本地虚拟小车的驱动器
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class LoopbackCommAdapterModule
@@ -38,10 +38,11 @@ public class LoopbackCommAdapterModule
 
     bind(VirtualVehicleConfiguration.class)
         .toInstance(configuration);
-
+    //这种注入方式非常特别，只需要定义接口，实现由Guice自动生成，生成实现的规则是——创建一个接口中方法的返回类型
     install(new FactoryModuleBuilder().build(LoopbackAdapterComponentsFactory.class));
-    
+
     // tag::documentation_createCommAdapterModule[]
+    //添加一个小车驱动器，本地虚拟小车
     vehicleCommAdaptersBinder().addBinding().to(LoopbackCommunicationAdapterFactory.class);
     // end::documentation_createCommAdapterModule[]
   }

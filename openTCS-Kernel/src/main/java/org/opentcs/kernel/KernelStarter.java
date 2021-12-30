@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Initializes an openTCS kernel instance.
- *
+ * 初始化一个内核实例
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class KernelStarter {
@@ -46,6 +46,7 @@ public class KernelStarter {
   private final Set<KernelExtension> extensions;
   /**
    * The kernel's executor service.
+   * 任务定时器
    */
   private final ScheduledExecutorService kernelExecutor;
 
@@ -70,7 +71,7 @@ public class KernelStarter {
 
   /**
    * Initializes the system and starts the openTCS kernel including modules.
-   *
+   * 系统初始化，启动内核各个模块
    * @throws IOException If there was a problem loading model data.
    */
   public void startKernel()

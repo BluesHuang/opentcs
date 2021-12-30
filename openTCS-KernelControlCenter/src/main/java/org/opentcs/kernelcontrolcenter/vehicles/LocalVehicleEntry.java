@@ -18,7 +18,7 @@ import org.opentcs.drivers.vehicle.management.VehicleProcessModelTO;
 /**
  * An entry for a vehicle present in kernel with detailed information about its attachment state
  * and latest process model.
- *
+ * 内核中存在的车辆，包含有关其连接状态和最新过程模型的详细信息
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public class LocalVehicleEntry {
@@ -29,10 +29,12 @@ public class LocalVehicleEntry {
   private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
   /**
    * Detailed information about the attachment state.
+   * 连接状态的详细信息
    */
   private AttachmentInformation attachmentInformation;
   /**
    * The current process model to this entry.
+   * 小车过程模型
    */
   private VehicleProcessModelTO processModel;
 
@@ -100,10 +102,12 @@ public class LocalVehicleEntry {
   public static enum Attribute {
     /**
      * Indicates a change of the process model reference.
+     * 指示过程模型引用的更改。
      */
     PROCESS_MODEL,
     /**
      * Indicates a change of the attachment information reference.
+     * 表示附件信息引用的更改。
      */
     ATTACHMENT_INFORMATION
   }

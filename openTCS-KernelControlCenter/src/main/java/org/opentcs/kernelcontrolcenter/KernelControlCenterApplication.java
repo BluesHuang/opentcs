@@ -33,22 +33,27 @@ public class KernelControlCenterApplication
   private static final Logger LOG = LoggerFactory.getLogger(KernelControlCenterApplication.class);
   /**
    * The instance fetching for kernel events.
+   * 声明一个内核事件获取器
    */
   private final KernelEventFetcher eventFetcher;
   /**
    * The actual kernel control center.
+   * 实际上的内核控制中心
    */
   private final KernelControlCenter kernelControlCenter;
   /**
    * The service portal manager.
+   * 服务入口管理器
    */
   private final PortalManager portalManager;
   /**
    * The application's event bus.
+   * 应用的事件总线
    */
   private final EventBus eventBus;
   /**
    * The application's configuration.
+   * 应用配置
    */
   private final KernelControlCenterConfiguration configuration;
   /**

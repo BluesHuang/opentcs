@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Manages users allowed to connect/operate with the kernel and authenticated clients.
- *
+ * 用户管理器，管理用户访问内核的权限
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public class UserManager
@@ -108,7 +108,7 @@ public class UserManager
       return;
     }
 
-    // Register the user manager as an event listener so that the user manager can collect events 
+    // Register the user manager as an event listener so that the user manager can collect events
     // and pass them to known clients polling events.
     eventSource.subscribe(this);
 

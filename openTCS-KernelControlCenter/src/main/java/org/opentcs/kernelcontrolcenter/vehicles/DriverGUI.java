@@ -49,7 +49,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A panel containing all vehicles and detailed information.
- *
+ * 小车列表
  * @author Stefan Walter (Fraunhofer IML)
  * @author Philipp Seifert (Fraunhofer IML)
  * @author Martin Grzenia (Fraunhofer IML)
@@ -78,7 +78,7 @@ public class DriverGUI
    */
   private final LocalVehicleEntryPool vehicleEntryPool;
   /**
-   * The detail panel to dispay when selecting a vehicle.
+   * The detail panel to display when selecting a vehicle.
    */
   private final DetailPanel detailPanel;
   /**
@@ -174,6 +174,7 @@ public class DriverGUI
 
   /**
    * Initializes the combo boxes with available adapters for every vehicle.
+   * 初始化适配器选着下拉框
    */
   private void initAdapterComboBoxes() {
     SingleCellEditor adapterCellEditor = new SingleCellEditor(vehicleTable);

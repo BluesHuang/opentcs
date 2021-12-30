@@ -12,7 +12,7 @@ import com.google.inject.AbstractModule;
 /**
  * A base class for Guice modules adding or customizing bindings for the kernel application and the
  * plant overview application.
- *
+ * 为内核和工厂监控程序提供Guice模块新增或自定义绑定的基类
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public abstract class ConfigurableInjectionModule
@@ -20,6 +20,7 @@ public abstract class ConfigurableInjectionModule
 
   /**
    * A provider for configuration bindings.
+   * 配置绑定
    */
   private org.opentcs.configuration.ConfigurationBindingProvider configBindingProvider;
 

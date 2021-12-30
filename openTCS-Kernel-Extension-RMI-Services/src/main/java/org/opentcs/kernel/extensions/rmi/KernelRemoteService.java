@@ -13,7 +13,7 @@ import org.opentcs.components.Lifecycle;
 
 /**
  * A base class for kernel-side implementations of remote services.
- *
+ * 一个定义内核远程服务接口的基类
  * @author Martin Grzenia (Fraunhofer IML)
  */
 public abstract class KernelRemoteService
@@ -26,7 +26,7 @@ public abstract class KernelRemoteService
 
   /**
    * Wraps the given exception into a suitable {@link RuntimeException}.
-   *
+   * 异常类型向下转型
    * @param exc The exception to find a runtime exception for.
    * @return The runtime exception.
    */

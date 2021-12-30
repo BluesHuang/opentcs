@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A logging handler that writes all INFO-logs to KernelControlCenter's logging text area.
- *
+ * 一个日志处理器，将所有日志信息写入内核ControlCenter的日志文本区域。
  * @author Philipp Seifert (Fraunhofer IML)
  */
 public class ControlCenterInfoHandler
@@ -41,10 +41,12 @@ public class ControlCenterInfoHandler
   private static final Logger LOG = LoggerFactory.getLogger(ControlCenterInfoHandler.class);
   /**
    * This class's configuration.
+   * 类的配置信息
    */
   private final KernelControlCenterConfiguration configuration;
   /**
    * Formats time stamps.
+   * 格式化时间戳
    */
   private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter
       .ofLocalizedDateTime(FormatStyle.SHORT)
@@ -52,16 +54,18 @@ public class ControlCenterInfoHandler
       .withZone(ZoneId.systemDefault());
   /**
    * The text area we're writing in.
+   * 写入的文本域
    */
   private final JTextArea textArea;
   /**
    * A flag whether the text area scrolls.
+   * 文本域是否自动滚动
    */
   private boolean autoScroll;
 
   /**
    * Creates a new ControlCenterInfoHandler.
-   *
+   * 构造函数
    * @param textArea The textArea we are writing to.
    * @param configuration This class' configuration.
    */
@@ -108,7 +112,7 @@ public class ControlCenterInfoHandler
 
   /**
    * Displays the notification.
-   *
+   * 显示通知
    * @param notification The notification
    */
   private void publish(UserNotification notification) {

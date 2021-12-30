@@ -21,7 +21,7 @@ import javax.swing.table.TableCellEditor;
 
 /**
  * A cell editor for maintaining different editors in one column.
- *
+ * 表格单元格编辑器，用于在同一个列，维护不同的单元格
  * @author Philipp Seifert (Fraunhofer IML)
  */
 final class SingleCellEditor
@@ -120,7 +120,7 @@ final class SingleCellEditor
 
   /**
    * Sets the current editor.
-   *
+   * 设置当前单元格
    * @param e A MouseEvent
    */
   public void selectEditor(MouseEvent e) {
@@ -135,6 +135,7 @@ final class SingleCellEditor
     if (editor == null) {
       editor = defaultEditor;
     }
-    table.changeSelection(row, table.getColumn("Adapter").getModelIndex(), false, false);
+//    table.changeSelection(row, table.getColumn("Adapter").getModelIndex(), false, false);
+    table.changeSelection(row, table.getSelectedColumn(), false, false);
   }
 }

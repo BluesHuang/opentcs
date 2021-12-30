@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class implements the standard openTCS kernel.
- *
+ * 标准内核
  * @author Stefan Walter (Fraunhofer IML)
  */
 final class StandardKernel
@@ -57,10 +57,12 @@ final class StandardKernel
   private final ScheduledExecutorService kernelExecutor;
   /**
    * This kernel's order receivers.
+   * 内核指令的接收器，可以是RMI、HTTP等不同的通道
    */
   private final Set<KernelExtension> kernelExtensions = new HashSet<>();
   /**
    * Functions as a barrier for the kernel's {@link #run() run()} method.
+   * 信号量
    */
   private final Semaphore terminationSemaphore = new Semaphore(0);
   /**
@@ -111,6 +113,7 @@ final class StandardKernel
 
     initialized = true;
     LOG.debug("Starting kernel thread");
+    //启动的时候就准备着关闭
     Thread kernelThread = new Thread(this, "kernelThread");
     kernelThread.start();
   }
@@ -134,7 +137,7 @@ final class StandardKernel
 
   @Override
   public void run() {
-    // Wait until terminated.
+    // Wait until terminated.等待关闭的信号
     terminationSemaphore.acquireUninterruptibly();
     LOG.info("Terminating...");
     // Sleep a bit so clients have some time to receive an event for the
@@ -217,7 +220,7 @@ final class StandardKernel
   // Methods not declared in any interface start here.
   /**
    * Generates an event for a state change.
-   *
+   * 发送内核状态变化事件
    * @param leftState The state left.
    * @param enteredState The state entered.
    * @param transitionFinished Whether the transition is finished or not.

@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class is the standard implementation of the {@link RemoteKernelServicePortal} interface.
+ * 内核RMI服务的标准实现
  * <p>
  * Upon creation, an instance of this class registers itself with the RMI registry by the name
  * {@link RegistrationName#REMOTE_KERNEL_CLIENT_PORTAL}.
@@ -54,6 +55,7 @@ public class StandardRemoteKernelClientPortal
   private final Kernel kernel;
   /**
    * The kernel's remote services.
+   * 内核的远程访问服务集合，提供各种不同需求的服务接口
    */
   private final Set<KernelRemoteService> remoteServices;
   /**
@@ -204,7 +206,7 @@ public class StandardRemoteKernelClientPortal
   public void logout(ClientID clientID) {
     requireNonNull("clientID");
 
-    // Forget the client so it won't be able to call methods on this kernel and won't receive 
+    // Forget the client so it won't be able to call methods on this kernel and won't receive
     // events any more.
     synchronized (userManager.getKnownClients()) {
       userManager.getKnownClients().remove(clientID);

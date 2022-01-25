@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="opentcs-contrib-communication-tcp-0.1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/openTCS-Contrib-Communication-TCP/build/libs/opentcs-contrib-communication-tcp-0.1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -27,7 +27,7 @@ import spark.Service;
 
 /**
  * Provides an HTTP interface for basic administration needs.
- *
+ * 为基本管理需求提供HTTP接口
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class ServiceWebApi

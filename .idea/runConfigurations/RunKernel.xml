@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RunKernel" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="org.opentcs.kernel.RunKernel" />
+    <module name="openTCS.openTCS-Kernel.guiceConfig" />
+    <option name="VM_PARAMETERS" value="-enableassertions -Djava.security.policy=D:\bruce\opentcs-git\openTCS-Kernel\build\install\openTCS-Kernel\config\java.policy -Djava.util.logging.config.file=D:\bruce\opentcs-git\openTCS-Kernel\build\install\openTCS-Kernel\config\logging.config -Dopentcs.base=&quot;D:\bruce\opentcs-git\openTCS-Kernel\build\install\openTCS-Kernel&quot; -Dopentcs.home=&quot;D:\bruce\opentcs-git\openTCS-Kernel\build\install\openTCS-Kernel&quot;" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.opentcs.kernel.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

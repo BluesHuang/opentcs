@@ -29,7 +29,7 @@ import spark.Service;
 
 /**
  * Handles requests and produces responses for version 1 of the web API.
- *
+ * 通过spark框架提供web服务能力
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class V1RequestHandler

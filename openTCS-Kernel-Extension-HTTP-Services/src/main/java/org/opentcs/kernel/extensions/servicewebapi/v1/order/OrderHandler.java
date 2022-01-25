@@ -34,7 +34,7 @@ import org.opentcs.kernel.extensions.servicewebapi.v1.order.binding.Transport;
 
 /**
  * Handles requests for creating or withdrawing transport orders.
- *
+ * 处理创建或撤消运输订单的请求
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class OrderHandler {

@@ -16,6 +16,7 @@ dependencies {
   api project(':openTCS-API-Injection')
   api project(':openTCS-Common')
   api project(':openTCS-CommAdapter-Loopback')
+  api project(':openTCS-Example-CommAdapter-Vehicle')
   api project(':openTCS-PeripheralCommAdapter-Loopback')
   api project(':openTCS-Strategies-Default')
   api project(':openTCS-Impl-Configuration-cfg4j')

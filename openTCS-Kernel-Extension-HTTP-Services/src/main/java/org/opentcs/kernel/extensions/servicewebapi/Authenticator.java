@@ -17,7 +17,7 @@ import spark.Request;
 
 /**
  * Authenticates incoming requests.
- *
+ * 验证传入的请求
  * @author Stefan Walter (Fraunhofer IML)
  */
 public class Authenticator {

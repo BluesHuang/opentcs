@@ -9,7 +9,7 @@ package org.opentcs.kernel.extensions.servicewebapi;
 
 /**
  * Defines some HTTP-related constants.
- *
+ * 定义一些与HTTP相关的常量
  * @author Stefan Walter (Fraunhofer IML)
  */
 public interface HttpConstants {

@@ -1,5 +1,13 @@
 buildscript {
   repositories {
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+//    maven {
+//      url "https://maven.pkg.github.com/manusant/spark-swagger"
+//      credentials {
+//        username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+//        password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+//      }
+//    }
     mavenCentral()
     maven {
       url "https://plugins.gradle.org/m2/"
